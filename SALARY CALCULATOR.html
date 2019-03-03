@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>SALARY CALCULATOR PAGE</title>
+<script language = "JavaScript">
+function ave(){
+document.uc.num3.value = parseInt(document.uc.num1.value) * parseInt(document.uc.num2.value)
+document.uc.result.value = (parseInt(document.uc.num3.value) + parseInt(document.uc.num4.value) - parseInt(document.uc.num5.value));
+
+if(parseInt(document.uc.result.value)<10000){
+	window.alert("CASUAL");
+} else {
+	window.alert("REGULAR");
+	}
+}
+
+
+
+</script>
+</head>
+<body bgcolor = black>
+<form name = "uc">
+<center>
+<font size = 6 face = "showcard gothic" color = pink>
+SALARY CALCULATOR<br><br>
+<table>
+<tr>
+<td><font color = pink size = 5>HOURS WORKED</td>
+<td><input type = text name = "num1"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>RATE/HOUR</td>
+<td><input type = text name = "num2"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>GROSS PAY</td>
+<td><input type = text name = "num3"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>OVERTIME</td>
+<td><input type = text name = "num4"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>DEDUCTIONS</td>
+<td><input type = text name = "num5"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>NET PAY</td>
+<td><input type = text name = "result"</td>
+</tr>
+</table><br>
+<input type = buttoN name = "but1" value = "CALCULATE" onclick = ave()>
+
+
+</body>
+</html>
