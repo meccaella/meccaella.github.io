@@ -1,2 +1,2 @@
 # meccaella.github.io
-permalink: /MYMAINPAGE.html
+permalink: /index.html
