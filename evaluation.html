@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>EVALUATION REPORT PAGE</title>
+<script language = "JavaScript">
+function ave(){
+document.uc.result.value = (parseFloat(document.uc.num1.value) + parseFloat(document.uc.num2.value) + parseFloat(document.uc.num3.value) + parseFloat(document.uc.num4.value))/4;
+if(parseFloat(document.uc.result.value)>.99 && parseFloat(document.uc.result.value)<2){
+	window.alert("POOR");
+	}
+if(parseFloat(document.uc.result.value)>2 && parseFloat(document.uc.result.value)<3.1){
+	window.alert("FAIR");
+	}
+if(parseFloat(document.uc.result.value)>3 && parseFloat(document.uc.result.value)<4.1){
+	window.alert("GOOD");
+	}
+if(parseFloat(document.uc.result.value)>4 && parseFloat(document.uc.result.value)<4.6){
+	window.alert("VERY GOOD");
+	}
+if(parseFloat(document.uc.result.value)>4.5 && parseFloat(document.uc.result.value)<5.1){
+	window.alert("EXCELLENT");
+	}
+}
+
+
+
+</script>
+</head>s
+<body bgcolor = black>
+<form name = "uc">
+<center>
+<font size = 6 face = "showcard gothic" color = pink>
+EVALUATION REPORT<br><br>
+<table>
+<tr>
+<td><font color = pink size = 5>PERFORMANCE</td>
+<td><input type = text name = "num1"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>PUNCTUALITY</td>
+<td><input type = text name = "num2"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>CHARACTER</td>
+<td><input type = text name = "num3"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>GROOMING</td>
+<td><input type = text name = "num4"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>OVER-ALL PAY</td>
+<td><input type = text name = "result"</td>
+</tr>
+</table><br>
+<input type = buttoN name = "but1" value = "CALCULATE" onclick = ave()>
+
+
+</body>
+</html>

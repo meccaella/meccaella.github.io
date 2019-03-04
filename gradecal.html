@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>GRADE CALCULATOR PAGE</title>
+<script language = "JavaScript">
+function ave(){
+document.uc.result.value = (parseInt(document.uc.num1.value) + parseInt(document.uc.num2.value) + parseInt(document.uc.num3.value) + parseInt(document.uc.num4.value))/4;
+if(parseInt(document.uc.result.value)<75){
+	window.alert("FAILED");
+} else{
+	window.alert("PASSED");
+	}
+}
+
+</script>
+</head>
+<body bgcolor = black>
+<form name = "uc">
+<center>
+<font size = 6 face = "showcard gothic" color = pink>
+SHS<br>
+GRADE CALCULATOR<br><br>
+<table>
+<tr>
+<td><font color = pink size = 5>1st Grading Grade</td>
+<td><input type = text name = "num1"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>2nd Grading Grade</td>
+<td><input type = text name = "num2"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>3rd Grading Grade</td>
+<td><input type = text name = "num3"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>4th Grading Grade</td>
+<td><input type = text name = "num4"</td>
+</tr>
+<tr>
+<td>
+<font color = pink size = 5>Grade</td>
+<td><input type = text name = "result"</td>
+</tr>
+</table><br>
+<input type = buttom name = "but1" value = "calculate" onclick = ave()>
+
+
+</body>
+</html>
